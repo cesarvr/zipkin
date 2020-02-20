@@ -10,4 +10,4 @@ oc expose dc/zipkin
 oc expose svc/zipkin
 ``` 
 
-![]()
+![](https://github.com/cesarvr/zipkin/blob/master/docs/dashboard.png?raw=true)
