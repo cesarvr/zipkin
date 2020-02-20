@@ -5,7 +5,9 @@ This is just a simple template to deploy a simple Zipkin (no storage, no product
 To deploy the server: 
 
 ```sh 
-oc create -f zipkin/zipkin.yml
+oc create -f zipkin/zipkin.yml # Creates the deployment
+
+# Send traffic to your Zipkin server.
 oc expose dc/zipkin
 oc expose svc/zipkin
 ``` 
