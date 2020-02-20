@@ -1,14 +1,13 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: DeploymentConfig
 metadata:
-  name: zipkin-deployment
+  name: zipkin
   labels:
     app: zipkin
 spec:
   replicas: 1
   selector:
-    matchLabels:
-      app: zipkin
+    app: zipkin
   template:
     metadata:
       labels:
@@ -18,10 +17,5 @@ spec:
       - name: zipkin
         image:  docker-registry.default.svc:5000/openshift/redhat-openjdk18-openshift:1.2
         command: ["/bin/sh", "-c", "curl -sSL https://zipkin.io/quickstart.sh | bash -s && java -jar zipkin.jar"]
-        env:
-          - name: https_proxy
-            value: "http://vsdbahlprxy1:8080"
-          - name: http_proxy
-            value: "http://vsdbahlprxy1:8080"
         ports:
         - containerPort: 9411
