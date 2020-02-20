@@ -22,4 +22,4 @@ Navigate with your browser and you should be able to get the welcome screen:
 ![](https://github.com/cesarvr/zipkin/blob/master/docs/dashboard.png?raw=true)
 
 
-You can visit my [instance (if still running)](http://zipkin-deployment-ctest.e4ff.pro-eu-west-1.openshiftapps.com/zipkin/)
+You can visit my [instance (if still running)](https://zipkin-deployment-ctest.e4ff.pro-eu-west-1.openshiftapps.com/zipkin/)
