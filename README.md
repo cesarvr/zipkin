@@ -1,6 +1,6 @@
 # Zipkin For OpenShift
 
-This is just a simple template to deploy a simple Zipkin (no storage) Server. 
+This is just a simple template to deploy a simple Zipkin (no storage, no production ready) Server. 
 
 To deploy the server: 
 
